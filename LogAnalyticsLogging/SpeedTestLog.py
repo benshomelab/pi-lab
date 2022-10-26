@@ -16,7 +16,7 @@ def startSpeedtest():
 	results_dict = s.results.dict()
 	dSpeed = results_dict['download'] / 1048576
 	uSpeed = results_dict['upload'] / 1048576
-	send_log(uSpeed, dSpeed)
+	send_log('SpeedTest','Result', 'Upload:' + str(uSpeed) + ',Download:' + str(dSpeed))
 
 while True:
 	try:
