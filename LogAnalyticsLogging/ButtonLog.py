@@ -5,7 +5,7 @@
 
 import threading
 import time
-from LogAnalyticsLogging import *
+from LALog import *
 
 # GPIO settings
 import RPi.GPIO as GPIO
