@@ -13,17 +13,10 @@ import sys
 sys.path.append('/usr/local/lib/python3.9/dist-packages/')
 
 # Update the customer ID to your Log Analytics workspace ID
-customer_id = '<Your workspace ID>'
+customer_id = 'd1ff6395-246a-4adc-a93c-a64c4b10b509'
 
 # For the shared key, use either the primary or the secondary Connected Sources client authentication key   
-shared_key = "<Your Shared Key>"
-
-# The log type is the name of the event that is being submitted
-log_type = "<Desired table name that will appear in Log Analyics (It will be appended with '_CL')>"
-
-# This is the name of the column the data submitted will appear on
-column_name = "<You desired column name here>"
-
+shared_key = "2Kc8JwEPHpi7O5gapwhhB6DAWjSS8aFC7ekcf9/4PkbY7Bohb/+eQxBuHL+r0uvSCZ2fSnSI9oqkCXmcetd7Bw=="
 
 # Build the API signature
 def build_signature(customer_id, shared_key, date, content_length, method, content_type, resource):
@@ -60,12 +53,15 @@ def post_data(customer_id, shared_key, body, log_type, action):
     else:
         print("Log POST Response code: {}".format(response.status_code))
 
-# This function accepts a string as a parameter that will be visible in the posted log analytics log
-def send_log(action):
+# This function us what is intended to be used to post data. See exammple below
+def send_log(table, column, data):
     # This JSON determines the schema of the table. This can be changes as desired to meet you needs.
     json_data = [{
        "TimeGenerated": datetime.datetime.utcnow().replace(tzinfo=datetime.timezone.utc).isoformat(),
-       column_name: action
+       column: data
     }]
     body = json.dumps(json_data)
-    post_data(customer_id, shared_key, body, log_type, action)
+    post_data(customer_id, shared_key, body, table, data)
+ 
+# Example of how to use the send_log function
+#send_log('tableName','columnName','columnData')
