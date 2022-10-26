@@ -1,7 +1,7 @@
 # This script sends a log of the speed test results to log analytics
 
 import speedtest
-from LogAnalyticsLogging import *
+from LALog.py import *
 import time
 
 # Logging config
