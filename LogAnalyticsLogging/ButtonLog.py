@@ -1,4 +1,3 @@
-
 # Send log on button press
 # This script requires the neccecary variables be configured in LogAnalyticsLogging/LALog.py
 # This is an uncomplicated script that serves one purpose: Sending a log to a log analytics workspace when a button is pressed.
@@ -29,7 +28,7 @@ def listenForButton():
             # I was experimenting with threading here. The threading isn't neccecary, just some experimentation
 			x = threading.Thread(target=ledOn)
 			x.start()
-			z = threading.Thread(target=send_log, args=("Button Pressed",))
+			z = threading.Thread(target=send_log, args=('IOLog','Action','Button Pressed'))
 			z.start()
 			time.sleep(1.3)
 			y = threading.Thread(target=ledOff)
