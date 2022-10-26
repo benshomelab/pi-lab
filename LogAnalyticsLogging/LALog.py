@@ -13,10 +13,10 @@ import sys
 sys.path.append('/usr/local/lib/python3.9/dist-packages/')
 
 # Update the customer ID to your Log Analytics workspace ID
-customer_id = 'd1ff6395-246a-4adc-a93c-a64c4b10b509'
+customer_id = '<workspace ID>'
 
 # For the shared key, use either the primary or the secondary Connected Sources client authentication key   
-shared_key = "2Kc8JwEPHpi7O5gapwhhB6DAWjSS8aFC7ekcf9/4PkbY7Bohb/+eQxBuHL+r0uvSCZ2fSnSI9oqkCXmcetd7Bw=="
+shared_key = "<workspace shared key>"
 
 # Build the API signature
 def build_signature(customer_id, shared_key, date, content_length, method, content_type, resource):
