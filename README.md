@@ -6,7 +6,7 @@ This repository contains projects completed using a Raspberry PI 3 Model B
 
 [LogAnalyticsLogging](LogAnalyticsLogging) | Experimentation with submitting logs via python to an Azure log Analytics Workspace
 
-[motionAlert](motionAlert) | Trigger an Azure Logic App based on the PI's GPIO input monitoring using Python
+[motionAlert](motionAlert) | Trigger an Azure Logic App based on the PI's GPIO input using Python
 
 ## E-Paper project details
 
