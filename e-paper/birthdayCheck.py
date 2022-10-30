@@ -3,7 +3,7 @@ import csv
 
 def importBdays():
 	imported_bdays = []
-	with open('/home/bcasazza/lab/e-paper/birthdays.txt', 'r') as bdays:
+	with open('<path to birthdays.txt file>', 'r') as bdays:
 		reader = csv.reader(bdays)
 		for row in reader:
 			imported_bdays.append(row)
