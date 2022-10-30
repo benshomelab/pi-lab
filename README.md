@@ -59,3 +59,7 @@ High level design of my project is the following:
         - `getVmStatus()` - Retrieves the powerstate of an Azure VM using the following API call - [Virtual Machines - Instance View](https://learn.microsoft.com/en-us/rest/api/compute/virtual-machines/instance-view?tabs=HTTP)
         - `getBudget()` - Retrieves the current cost per a Budget of my Azure subscription using the following API call - [Budgets - Get](https://learn.microsoft.com/en-us/rest/api/consumption/budgets/get?tabs=HTTP)
         - `getCalendarEvents()` Retrieves all calendar events on a specified user's calendar happening on the current day using the following API call (This has code for adjusting timezone from UTC to EST) - [Get event](https://learn.microsoft.com/en-us/graph/api/event-get?view=graph-rest-1.0&tabs=http)
+
+### Demo of final product
+
+![Demo of final product](e-paper-demo.JPG)
