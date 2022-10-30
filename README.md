@@ -1,7 +1,7 @@
 # pi-lab
 
-[LogAnalyticsLogging](LogAnalyticsLogging) | Experimentation with submitting logs to an Azure log Analytics Workspace
+[E-Paper project](e-paper) | Python project that pulls data from a variety of sources and displays it on an e-paper display.
 
-[e-paper](e-paper) | Project writing Azure data to an e-ink display
+[LogAnalyticsLogging](LogAnalyticsLogging) | Experimentation with submitting logs via python to an Azure log Analytics Workspace
 
-[motionAlert](motionAlert) | Trigger an Azure Logic App based on the PI's GPIO input monitoring
+[motionAlert](motionAlert) | Trigger an Azure Logic App based on the PI's GPIO input monitoring using Python
